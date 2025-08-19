@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import Navigation from './Navigation';
-import CustomCursor from './CustomCursor';
 
 interface LayoutProps {
   children: ReactNode;
@@ -15,7 +14,6 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Background Gradients */}
       <div className="fixed inset-0 bg-gradient-hero opacity-50 pointer-events-none" />
       
-      <CustomCursor />
       <Navigation />
       
       <main className="relative z-10 pt-20">

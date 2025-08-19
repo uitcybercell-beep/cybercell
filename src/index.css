@@ -138,7 +138,6 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-    cursor: none; /* Custom cursor */
     overflow-x: hidden;
   }
 
@@ -153,32 +152,6 @@
 }
 
 @layer components {
-  /* Custom cursor */
-  .cursor-glow {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background: var(--gradient-cyber);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    filter: blur(1px);
-    transition: var(--transition-smooth);
-  }
-
-  .cursor-trail {
-    position: fixed;
-    width: 4px;
-    height: 4px;
-    background: hsl(var(--accent));
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9998;
-    opacity: 0.8;
-    transition: all 0.1s ease-out;
-  }
-
   /* Glass morphism cards */
   .glass-card {
     background: var(--glass-bg);
