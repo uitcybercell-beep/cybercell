@@ -1,53 +1,81 @@
-# Welcome to your Lovable project
+# Pynevera - Aegis against artifice
 
-## Project info
+A student-led initiative bringing accessible cybersecurity insights and awareness to the digital community. Our platform serves as a comprehensive resource for staying informed about the latest cybersecurity threats, awareness techniques, and mitigation strategies.
 
-**URL**: https://lovable.dev/projects/a98e89d0-84c6-4a7e-8f9a-6af64b42abf7
+## 🌐 Live Website
 
-## How can I edit this code?
+Visit our website: [Pynevera](https://madhumith-r.github.io/secure-haven-gazette)
 
-There are several ways of editing your application.
+## 🛡️ Features
 
-**Use Lovable**
+- **Cyber Awareness** - Educational resources and best practices
+- **Recent Threats** - Latest updates on cybersecurity threats
+- **Mitigation Strategies** - Practical solutions for cyber defense
+- **Community Engagement** - Connect with fellow security enthusiasts
+- **Responsive Design** - Optimized for all devices
+- **Modern UI** - Built with React, Tailwind CSS, and Shadcn UI
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a98e89d0-84c6-4a7e-8f9a-6af64b42abf7) and start prompting.
+## 🚀 Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Shadcn UI Components
+- Framer Motion
+- React Router
 
-**Use your preferred IDE**
+## 🔧 Local Development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+To run this project locally, follow these steps:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone https://github.com/Madhumith-R/secure-haven-gazette.git
 
-Follow these steps:
+# Navigate to the project directory
+cd secure-haven-gazette
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 📦 Building and Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Build for production
+npm run build
 
-**Use GitHub Codespaces**
+# Deploy to GitHub Pages
+npm run deploy
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+## 🤝 Contributing
+
+We welcome contributions from the community! If you'd like to contribute:
+
+1. Fork the repository
+2. Create a new branch for your feature
+3. Make your changes
+4. Submit a pull request
+
+## 👥 Team
+
+- Student-led initiative
+- Built with passion for cybersecurity
+- Committed to making security knowledge accessible
+
+## 📫 Contact
+
+- Email: team@pynevera.com
+- Twitter: [@pynevera](https://twitter.com/pynevera)
+- GitHub: [Pynevera](https://github.com/pynevera)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
