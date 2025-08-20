@@ -98,7 +98,7 @@ const RecentThreats = () => {
             Recent Threats
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl font-orbitron font-bold mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl font-quantico font-bold mb-6 text-white">
             <span className="gradient-text">Emerging</span> Cyber Threats
           </h1>
           
@@ -117,7 +117,7 @@ const RecentThreats = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Threat Intelligence Dashboard
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -147,7 +147,7 @@ const RecentThreats = () => {
                         {threat.severity}
                       </Badge>
                     </div>
-                    <CardTitle className="text-xl font-orbitron">{threat.title}</CardTitle>
+                    <CardTitle className="text-xl font-quantico">{threat.title}</CardTitle>
                   </CardHeader>
                   
                   <CardContent className="space-y-4">
@@ -188,7 +188,7 @@ const RecentThreats = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Attack Evolution Timeline
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -219,7 +219,7 @@ const RecentThreats = () => {
                     {item.month.split(' ')[0]}
                   </div>
                   <div className="flex-1 glass-card p-6 rounded-lg border-border/20">
-                    <h3 className="font-orbitron font-semibold text-lg mb-2">{item.event}</h3>
+                    <h3 className="font-quantico font-semibold text-lg mb-2">{item.event}</h3>
                     <p className="text-muted-foreground text-sm">{item.impact}</p>
                   </div>
                 </motion.div>
@@ -239,7 +239,7 @@ const RecentThreats = () => {
             className="text-center glass-card p-12 rounded-3xl border-red-500/20 bg-red-500/5"
           >
             <AlertTriangle className="w-16 h-16 text-red-400 mx-auto mb-6" />
-            <h3 className="text-3xl md:text-4xl font-orbitron font-bold text-red-400 mb-6">
+            <h3 className="text-3xl md:text-4xl font-quantico font-bold text-red-400 mb-6">
               Critical Alert: Stay Vigilant
             </h3>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

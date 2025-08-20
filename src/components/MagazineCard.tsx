@@ -74,7 +74,7 @@ const MagazineCard = ({
                 </motion.div>
               </div>
 
-              <h3 className={`font-orbitron font-bold text-white mb-3 ${
+              <h3 className={`font-quantico font-bold text-white mb-3 ${
                 featured ? 'text-2xl md:text-3xl' : 'text-lg'
               }`}>
                 {title}

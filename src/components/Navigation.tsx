@@ -14,6 +14,7 @@ const Navigation = () => {
     { name: 'Recent Threats', path: '/recent-threats' },
     { name: 'Mitigation', path: '/mitigation' },
     { name: 'References', path: '/references' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (
@@ -31,12 +32,13 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="p-2 bg-gradient-cyber rounded-lg">
-                <Shield className="w-6 h-6 text-white" />
+              <div className="px-4 py-2 rounded-xl bg-zinc-100/5 hover:bg-zinc-100/10 transition-all">
+                <img 
+                  src="/assets/logo.png" 
+                  alt="Secure Haven Gazette Logo" 
+                  className="h-24 w-auto" 
+                />
               </div>
-              <span className="text-xl font-orbitron font-bold gradient-text">
-                CyberSec Hub
-              </span>
             </motion.div>
           </Link>
 

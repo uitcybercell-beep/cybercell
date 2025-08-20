@@ -77,7 +77,7 @@ const CyberAwareness = () => {
             Cyber Awareness
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl font-orbitron font-bold mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl font-quantico font-bold mb-6 text-white">
             Building a <span className="gradient-text">Security-First</span> Culture
           </h1>
           
@@ -96,7 +96,7 @@ const CyberAwareness = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Core Security Principles
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -117,7 +117,7 @@ const CyberAwareness = () => {
                     <div className="p-3 bg-gradient-cyber rounded-lg w-fit mb-4">
                       <principle.icon className="w-6 h-6 text-white" />
                     </div>
-                    <CardTitle className="text-xl font-orbitron">{principle.title}</CardTitle>
+                    <CardTitle className="text-xl font-quantico">{principle.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">
@@ -139,7 +139,7 @@ const CyberAwareness = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Key Awareness Areas
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -161,7 +161,7 @@ const CyberAwareness = () => {
                       <div className="p-3 bg-gradient-cyber rounded-lg">
                         <topic.icon className="w-6 h-6 text-white" />
                       </div>
-                      <CardTitle className="text-xl font-orbitron">{topic.title}</CardTitle>
+                      <CardTitle className="text-xl font-quantico">{topic.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -193,7 +193,7 @@ const CyberAwareness = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-center glass-card p-12 rounded-3xl border-border/20"
           >
-            <h3 className="text-3xl md:text-4xl font-orbitron font-bold gradient-text mb-6">
+            <h3 className="text-3xl md:text-4xl font-quantico font-bold gradient-text mb-6">
               Ready to Enhance Your Security Awareness?
             </h3>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

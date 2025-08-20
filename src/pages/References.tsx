@@ -195,7 +195,7 @@ const References = () => {
             References & Resources
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl font-orbitron font-bold mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl font-quantico font-bold mb-6 text-white">
             <span className="gradient-text">Essential</span> Security Resources
           </h1>
           
@@ -214,7 +214,7 @@ const References = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Resource Library
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -234,7 +234,7 @@ const References = () => {
                   <div className={`p-4 bg-gradient-to-br ${category.color} rounded-lg mr-4`}>
                     <category.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-3xl font-orbitron font-bold gradient-text">
+                  <h3 className="text-3xl font-quantico font-bold gradient-text">
                     {category.title}
                   </h3>
                 </div>
@@ -260,7 +260,7 @@ const References = () => {
                               {renderStars(resource.rating)}
                             </div>
                           </div>
-                          <CardTitle className="text-lg font-orbitron group-hover:text-cyber-blue transition-colors">
+                          <CardTitle className="text-lg font-quantico group-hover:text-cyber-blue transition-colors">
                             {resource.title}
                           </CardTitle>
                         </CardHeader>
@@ -306,7 +306,7 @@ const References = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Essential Reading
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -329,7 +329,7 @@ const References = () => {
                         <BookOpen className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-orbitron font-semibold mb-1 group-hover:text-cyber-blue transition-colors">
+                        <h3 className="text-lg font-quantico font-semibold mb-1 group-hover:text-cyber-blue transition-colors">
                           {book.title}
                         </h3>
                         <p className="text-muted-foreground text-sm mb-2">by {book.author}</p>
@@ -357,7 +357,7 @@ const References = () => {
             className="text-center glass-card p-12 rounded-3xl border-border/20"
           >
             <BookOpen className="w-16 h-16 text-cyber-purple mx-auto mb-6" />
-            <h3 className="text-3xl md:text-4xl font-orbitron font-bold gradient-text mb-6">
+            <h3 className="text-3xl md:text-4xl font-quantico font-bold gradient-text mb-6">
               Contribute to Our Resource Library
             </h3>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

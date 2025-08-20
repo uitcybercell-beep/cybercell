@@ -80,7 +80,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-orbitron font-bold mb-8"
+            className="text-5xl md:text-7xl lg:text-8xl font-quantico font-bold mb-8"
           >
             <span className="gradient-text">Cyber</span>
             <span className="text-white">Security</span>
@@ -152,7 +152,7 @@ const HomePage = () => {
                 <div className="inline-flex p-3 bg-gradient-cyber rounded-full mb-4">
                   <stat.icon className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-3xl font-orbitron font-bold gradient-text mb-2">
+                <div className="text-3xl font-quantico font-bold gradient-text mb-2">
                   {stat.number}
                 </div>
                 <div className="text-muted-foreground">{stat.label}</div>
@@ -175,7 +175,7 @@ const HomePage = () => {
             animate={gridInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-6xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-4xl md:text-6xl font-quantico font-bold gradient-text mb-6">
               Latest Intelligence
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

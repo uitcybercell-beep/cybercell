@@ -146,7 +146,7 @@ const Mitigation = () => {
             Mitigation Strategies
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl font-orbitron font-bold mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl font-quantico font-bold mb-6 text-white">
             <span className="gradient-text">Advanced</span> Defense Strategies
           </h1>
           
@@ -165,7 +165,7 @@ const Mitigation = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Core Mitigation Strategies
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -192,7 +192,7 @@ const Mitigation = () => {
                       </Badge>
                     </div>
                     <div className="flex items-center justify-between">
-                      <CardTitle className="text-lg font-orbitron">{strategy.title}</CardTitle>
+                      <CardTitle className="text-lg font-quantico">{strategy.title}</CardTitle>
                       <div className="text-right">
                         <div className="text-2xl font-bold gradient-text">{strategy.effectiveness}</div>
                         <div className="text-xs text-muted-foreground">effective</div>
@@ -241,7 +241,7 @@ const Mitigation = () => {
             animate={contentInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-orbitron font-bold gradient-text mb-6">
+            <h2 className="text-3xl md:text-5xl font-quantico font-bold gradient-text mb-6">
               Industry Frameworks
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -259,7 +259,7 @@ const Mitigation = () => {
               >
                 <Card className="glass-card border-border/20 h-full magazine-card">
                   <CardHeader>
-                    <CardTitle className="text-xl font-orbitron text-center">{framework.name}</CardTitle>
+                    <CardTitle className="text-xl font-quantico text-center">{framework.name}</CardTitle>
                     <p className="text-muted-foreground text-center text-sm">
                       {framework.description}
                     </p>
@@ -297,7 +297,7 @@ const Mitigation = () => {
             className="text-center glass-card p-12 rounded-3xl border-border/20"
           >
             <Server className="w-16 h-16 text-cyber-green mx-auto mb-6" />
-            <h3 className="text-3xl md:text-4xl font-orbitron font-bold gradient-text mb-6">
+            <h3 className="text-3xl md:text-4xl font-quantico font-bold gradient-text mb-6">
               Ready to Strengthen Your Defenses?
             </h3>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

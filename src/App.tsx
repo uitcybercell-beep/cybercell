@@ -9,6 +9,7 @@ import CyberAwareness from "./pages/CyberAwareness";
 import RecentThreats from "./pages/RecentThreats";
 import Mitigation from "./pages/Mitigation";
 import References from "./pages/References";
+import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/recent-threats" element={<RecentThreats />} />
             <Route path="/mitigation" element={<Mitigation />} />
             <Route path="/references" element={<References />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
