@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Shield, Menu, X } from 'lucide-react';
+import byteLogo from '../../assets/byte.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +28,12 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="hoverable">
             <motion.div
-              className="flex items-center space-x-3"
+              className="flex items-center space-x-4"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="px-4 py-2">
+              <img src={byteLogo} alt="Byte Logo" className="h-20 w-20" />
+              <div className="py-2">
                 <span className="text-3xl font-quantico font-bold bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">
                   Cyber Cell
                 </span>
