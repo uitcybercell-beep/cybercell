@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
             <span className="text-muted-foreground">Developed by</span>
             <div className="flex items-center gap-2">
               <img 
-                src="assets/logo.png" 
+                src={logo} 
                 alt="Pynevera Logo" 
                 className="h-10 w-auto" 
               />
