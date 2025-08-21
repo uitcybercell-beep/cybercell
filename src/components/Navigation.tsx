@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Shield, Menu, X } from 'lucide-react';
-import byteLogo from '../../assets/byte.png';
+import byteLogo from '@/assets/byte.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
