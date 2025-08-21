@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { AlertTriangle, Zap, Cpu, Wifi, Bot, Globe } from 'lucide-react';
+import { AlertTriangle, Zap, Cpu, Wifi, Bot, Globe, ExternalLink } from 'lucide-react';
 
 import cyberThreats from '@/assets/cyber-threats.jpg';
 
@@ -18,7 +18,9 @@ const RecentThreats = () => {
       description: "Advanced machine learning algorithms being used to automate and enhance cyber attacks, making them more sophisticated and harder to detect.",
       impact: "Automated phishing, deepfake fraud, intelligent malware",
       trend: "↗️ 340% increase",
-      color: "from-red-500 to-orange-500"
+      color: "from-red-500 to-orange-500",
+      source: "Microsoft Digital Defense Report",
+      link: "https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report"
     },
     {
       icon: Zap,
@@ -27,7 +29,9 @@ const RecentThreats = () => {
       description: "Previously unknown vulnerabilities being weaponized faster than ever, with exploit kits becoming more accessible.",
       impact: "System compromise, data breaches, privilege escalation",
       trend: "↗️ 85% increase",
-      color: "from-orange-500 to-yellow-500"
+      color: "from-orange-500 to-yellow-500",
+      source: "Google Project Zero",
+      link: "https://googleprojectzero.blogspot.com/"
     },
     {
       icon: Globe,
@@ -36,7 +40,9 @@ const RecentThreats = () => {
       description: "Targeting third-party vendors and software dependencies to gain access to multiple organizations simultaneously.",
       impact: "Widespread compromise, trusted software corruption",
       trend: "↗️ 200% increase",
-      color: "from-red-600 to-red-400"
+      color: "from-red-600 to-red-400",
+      source: "ENISA Threat Landscape",
+      link: "https://www.enisa.europa.eu/topics/threat-risk-management/threats-and-trends"
     },
     {
       icon: Wifi,
@@ -45,7 +51,9 @@ const RecentThreats = () => {
       description: "Compromised Internet of Things devices being leveraged for large-scale DDoS attacks and cryptocurrency mining.",
       impact: "Network disruption, resource theft, privacy violation",
       trend: "↗️ 120% increase",
-      color: "from-yellow-500 to-green-500"
+      color: "from-yellow-500 to-green-500",
+      source: "NIST IoT Security",
+      link: "https://www.nist.gov/topics/internet-things-iot"
     },
     {
       icon: Cpu,
@@ -54,7 +62,9 @@ const RecentThreats = () => {
       description: "Sophisticated ransomware operations being offered as subscription services, lowering the barrier for cybercriminals.",
       impact: "Business disruption, data encryption, financial loss",
       trend: "↗️ 180% increase",
-      color: "from-purple-500 to-pink-500"
+      color: "from-purple-500 to-pink-500",
+      source: "CISA Ransomware Guide",
+      link: "https://www.cisa.gov/stopransomware"
     },
     {
       icon: AlertTriangle,
@@ -63,7 +73,9 @@ const RecentThreats = () => {
       description: "Improperly configured cloud services exposing sensitive data and creating entry points for attackers.",
       impact: "Data exposure, unauthorized access, compliance violations",
       trend: "↗️ 150% increase",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-cyan-500",
+      source: "Cloud Security Alliance",
+      link: "https://cloudsecurityalliance.org/research/guidance"
     }
   ];
 
@@ -166,6 +178,20 @@ const RecentThreats = () => {
                         <span className="text-xs font-mono text-green-400">{threat.trend}</span>
                       </div>
                     </div>
+
+                    {threat.link && (
+                      <div className="mt-4 pt-4 border-t border-border/20">
+                        <a
+                          href={threat.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-sm text-accent hover:underline gap-1 group"
+                        >
+                          Learn more at {threat.source}
+                          <ExternalLink className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
+                        </a>
+                      </div>
+                    )}
                   </CardContent>
                   
                   {/* Hover effect overlay */}
@@ -230,6 +256,7 @@ const RecentThreats = () => {
       </section>
 
       {/* Alert Section */}
+    {/*
       <section className="py-20">
         <div className="container mx-auto px-6">
           <motion.div
@@ -264,7 +291,8 @@ const RecentThreats = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> 
+    */}
     </div>
   );
 };

@@ -12,6 +12,7 @@ interface MagazineCardProps {
   image: string;
   gradient?: string;
   featured?: boolean;
+  onClick?: () => void;
 }
 
 const MagazineCard = ({ 
@@ -21,7 +22,8 @@ const MagazineCard = ({
   readTime, 
   image, 
   gradient = 'from-cyber-blue to-cyber-purple',
-  featured = false 
+  featured = false,
+  onClick 
 }: MagazineCardProps) => {
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -34,7 +36,10 @@ const MagazineCard = ({
       initial={{ opacity: 0, y: 60 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
+      className={`${featured ? 'md:col-span-2 md:row-span-2' : ''} cursor-pointer`}
+      onClick={onClick}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
     >
       <Card className={`magazine-card glass-card border-border/20 group overflow-hidden ${
         featured ? 'h-[500px]' : 'h-[320px]'

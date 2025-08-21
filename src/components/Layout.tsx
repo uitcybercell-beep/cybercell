@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 interface LayoutProps {
   children: ReactNode;
@@ -7,7 +8,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden">
+    <div className="min-h-screen bg-background relative overflow-x-hidden flex flex-col">
       {/* Animated Background Grid */}
       <div className="cyber-grid fixed inset-0 opacity-30" />
       
@@ -16,9 +17,13 @@ const Layout = ({ children }: LayoutProps) => {
       
       <Navigation />
       
-      <main className="relative z-10 pt-20">
+      <main className="relative z-10 pt-20 flex-grow">
         {children}
       </main>
+
+      <div className="relative z-10">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -17,12 +17,22 @@ const References = () => {
       color: "from-cyber-blue to-cyber-purple",
       resources: [
         {
+          title: "CISA Cybersecurity Resources",
+          description: "Comprehensive guidance and tools from the US Cybersecurity Agency",
+          type: "Government Resource",
+          rating: 5,
+          lastUpdated: "2025",
+          url: "https://www.cisa.gov/cybersecurity",
+          source: "Cybersecurity & Infrastructure Security Agency"
+        },
+        {
           title: "NIST Cybersecurity Framework 2.0",
           description: "Comprehensive framework for managing cybersecurity risks",
           type: "Framework",
           rating: 5,
           lastUpdated: "2024",
-          url: "https://nist.gov/cyberframework"
+          url: "https://www.nist.gov/cyberframework",
+          source: "National Institute of Standards and Technology"
         },
         {
           title: "ISO/IEC 27001:2022",
@@ -142,25 +152,33 @@ const References = () => {
       title: "The Art of Deception",
       author: "Kevin Mitnick",
       description: "Social engineering techniques and human-based attacks",
-      category: "Social Engineering"
+      category: "Social Engineering",
+      link: "https://www.wiley.com/en-us/The+Art+of+Deception:+Controlling+the+Human+Element+of+Security-p-9780764542800",
+      publisher: "Wiley"
     },
     {
       title: "Practical Malware Analysis",
       author: "Michael Sikorski",
       description: "Hands-on guide to malware analysis and reverse engineering",
-      category: "Malware Analysis"
+      category: "Malware Analysis",
+      link: "https://nostarch.com/malware",
+      publisher: "No Starch Press"
     },
     {
       title: "Blue Team Handbook",
       author: "Don Murdoch",
       description: "Incident response edition for security professionals",
-      category: "Incident Response"
+      category: "Incident Response",
+      link: "https://www.amazon.com/Blue-Team-Handbook-condensed-Operations/dp/1091493898",
+      publisher: "CreateSpace Independent Publishing"
     },
     {
       title: "Hacking: The Art of Exploitation",
       author: "Jon Erickson",
       description: "Programming fundamentals for ethical hackers",
-      category: "Ethical Hacking"
+      category: "Ethical Hacking",
+      link: "https://nostarch.com/hacking2.htm",
+      publisher: "No Starch Press"
     }
   ];
 
@@ -334,9 +352,22 @@ const References = () => {
                         </h3>
                         <p className="text-muted-foreground text-sm mb-2">by {book.author}</p>
                         <p className="text-sm leading-relaxed mb-3">{book.description}</p>
-                        <Badge variant="outline" className="text-xs">
-                          {book.category}
-                        </Badge>
+                        <div className="flex items-center justify-between">
+                          <Badge variant="outline" className="text-xs">
+                            {book.category}
+                          </Badge>
+                          <motion.a
+                            href={book.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-xs text-cyber-blue hover:text-cyber-purple transition-colors gap-1 group"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <span>View on {book.publisher}</span>
+                            <ExternalLink className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
+                          </motion.a>
+                        </div>
                       </div>
                     </div>
                   </CardContent>
@@ -347,7 +378,7 @@ const References = () => {
         </div>
       </section>
 
-      {/* Resource Contribution */}
+      {/* Resource Contribution 
       <section className="py-20">
         <div className="container mx-auto px-6">
           <motion.div
@@ -382,7 +413,7 @@ const References = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 };

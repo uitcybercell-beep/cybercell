@@ -287,7 +287,7 @@ const Mitigation = () => {
         </div>
       </section>
 
-      {/* Implementation Roadmap */}
+      {/* Implementation Roadmap 
       <section className="py-20">
         <div className="container mx-auto px-6">
           <motion.div
@@ -322,7 +322,7 @@ const Mitigation = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 };

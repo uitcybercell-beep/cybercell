@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Brain, Users, Lock, AlertTriangle, CheckCircle, Target } from 'lucide-react';
+import { Brain, Users, Lock, AlertTriangle, CheckCircle, Target, ExternalLink } from 'lucide-react';
 
 import cyberAwareness from '@/assets/cyber-awareness.jpg';
 
@@ -15,25 +15,33 @@ const CyberAwareness = () => {
       icon: Brain,
       title: "Security Mindset",
       description: "Developing a proactive approach to identifying and mitigating cyber risks in daily operations.",
-      points: ["Think before you click", "Verify before you trust", "Question unusual requests"]
+      points: ["Think before you click", "Verify before you trust", "Question unusual requests"],
+      link: "https://www.cisa.gov/cyber-essentials",
+      source: "CISA Cyber Essentials"
     },
     {
       icon: Users,
       title: "Human Factor",
       description: "Understanding how social engineering exploits human psychology and building defense mechanisms.",
-      points: ["Phishing awareness", "Social engineering tactics", "Incident reporting"]
+      points: ["Phishing awareness", "Social engineering tactics", "Incident reporting"],
+      link: "https://www.nist.gov/itl/applied-cybersecurity/nice",
+      source: "NIST Cybersecurity Workforce Framework"
     },
     {
       icon: Lock,
       title: "Data Protection",
       description: "Implementing best practices for safeguarding sensitive information and maintaining privacy.",
-      points: ["Encryption standards", "Access controls", "Data classification"]
+      points: ["Encryption standards", "Access controls", "Data classification"],
+      link: "https://www.enisa.europa.eu/topics/data-protection",
+      source: "ENISA Data Protection"
     },
     {
       icon: AlertTriangle,
       title: "Threat Recognition",
       description: "Identifying common attack vectors and understanding the indicators of compromise.",
-      points: ["Malware signatures", "Suspicious activities", "Network anomalies"]
+      points: ["Malware signatures", "Suspicious activities", "Network anomalies"],
+      link: "https://www.mitre.org/attack",
+      source: "MITRE ATT&CK Framework"
     }
   ];
 
@@ -155,7 +163,7 @@ const CyberAwareness = () => {
                 animate={contentInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
               >
-                <Card className="glass-card border-border/20 h-full magazine-card">
+                <Card className="glass-card border-border/20 h-full magazine-card hover:border-accent/50 transition-colors">
                   <CardHeader>
                     <div className="flex items-center space-x-4">
                       <div className="p-3 bg-gradient-cyber rounded-lg">
@@ -176,6 +184,19 @@ const CyberAwareness = () => {
                         </div>
                       ))}
                     </div>
+                    {topic.link && (
+                      <div className="mt-4 pt-4 border-t border-border/20">
+                        <a
+                          href={topic.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-sm text-accent hover:underline gap-1 group"
+                        >
+                          Learn more at {topic.source}
+                          <ExternalLink className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
+                        </a>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </motion.div>
@@ -185,7 +206,7 @@ const CyberAwareness = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20">
+      {/*<section className="py-20">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -218,7 +239,7 @@ const CyberAwareness = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 };
